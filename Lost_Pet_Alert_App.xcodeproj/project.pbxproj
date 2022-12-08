@@ -15,6 +15,7 @@
 		FC31676429429B96000A9443 /* DisappearanceAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676329429B96000A9443 /* DisappearanceAlertView.swift */; };
 		FC31676629429BAB000A9443 /* DiscoveryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676529429BAB000A9443 /* DiscoveryListView.swift */; };
 		FC31676829429BBD000A9443 /* DisappearanceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676729429BBD000A9443 /* DisappearanceListView.swift */; };
+		FC31676C2942A4FF000A9443 /* DiscoveryPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676B2942A4FF000A9443 /* DiscoveryPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FC31676329429B96000A9443 /* DisappearanceAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearanceAlertView.swift; sourceTree = "<group>"; };
 		FC31676529429BAB000A9443 /* DiscoveryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryListView.swift; sourceTree = "<group>"; };
 		FC31676729429BBD000A9443 /* DisappearanceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearanceListView.swift; sourceTree = "<group>"; };
+		FC31676B2942A4FF000A9443 /* DiscoveryPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		FC31675E294297BB000A9443 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FC31676B2942A4FF000A9443 /* DiscoveryPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				FC31676629429BAB000A9443 /* DiscoveryListView.swift in Sources */,
 				FC31676229429B7E000A9443 /* DiscoveryAlertView.swift in Sources */,
 				FC31676029429800000A9443 /* HomeView.swift in Sources */,
+				FC31676C2942A4FF000A9443 /* DiscoveryPost.swift in Sources */,
 				FC31676429429B96000A9443 /* DisappearanceAlertView.swift in Sources */,
 				FC31674F29429426000A9443 /* Lost_Pet_Alert_AppApp.swift in Sources */,
 				FC31676829429BBD000A9443 /* DisappearanceListView.swift in Sources */,
