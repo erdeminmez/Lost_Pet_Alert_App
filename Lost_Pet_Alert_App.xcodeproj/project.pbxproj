@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		FC31674F29429426000A9443 /* Lost_Pet_Alert_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31674E29429426000A9443 /* Lost_Pet_Alert_AppApp.swift */; };
-		FC31675129429426000A9443 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31675029429426000A9443 /* ContentView.swift */; };
 		FC31675329429428000A9443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC31675229429428000A9443 /* Assets.xcassets */; };
 		FC31675629429428000A9443 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC31675529429428000A9443 /* Preview Assets.xcassets */; };
+		FC31676029429800000A9443 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31675F29429800000A9443 /* HomeView.swift */; };
+		FC31676229429B7E000A9443 /* DiscoveryAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676129429B7E000A9443 /* DiscoveryAlertView.swift */; };
+		FC31676429429B96000A9443 /* DisappearanceAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676329429B96000A9443 /* DisappearanceAlertView.swift */; };
+		FC31676629429BAB000A9443 /* DiscoveryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676529429BAB000A9443 /* DiscoveryListView.swift */; };
+		FC31676829429BBD000A9443 /* DisappearanceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676729429BBD000A9443 /* DisappearanceListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC31674B29429426000A9443 /* Lost_Pet_Alert_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lost_Pet_Alert_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC31674E29429426000A9443 /* Lost_Pet_Alert_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lost_Pet_Alert_AppApp.swift; sourceTree = "<group>"; };
-		FC31675029429426000A9443 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC31675229429428000A9443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC31675529429428000A9443 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC31675F29429800000A9443 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FC31676129429B7E000A9443 /* DiscoveryAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryAlertView.swift; sourceTree = "<group>"; };
+		FC31676329429B96000A9443 /* DisappearanceAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearanceAlertView.swift; sourceTree = "<group>"; };
+		FC31676529429BAB000A9443 /* DiscoveryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryListView.swift; sourceTree = "<group>"; };
+		FC31676729429BBD000A9443 /* DisappearanceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearanceListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		FC31674D29429426000A9443 /* Lost_Pet_Alert_App */ = {
 			isa = PBXGroup;
 			children = (
+				FC31675E294297BB000A9443 /* Models */,
+				FC31675D294297B2000A9443 /* Helpers */,
+				FC31675C294297A9000A9443 /* Views */,
 				FC31674E29429426000A9443 /* Lost_Pet_Alert_AppApp.swift */,
-				FC31675029429426000A9443 /* ContentView.swift */,
 				FC31675229429428000A9443 /* Assets.xcassets */,
 				FC31675429429428000A9443 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				FC31675529429428000A9443 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC31675C294297A9000A9443 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC31675F29429800000A9443 /* HomeView.swift */,
+				FC31676129429B7E000A9443 /* DiscoveryAlertView.swift */,
+				FC31676329429B96000A9443 /* DisappearanceAlertView.swift */,
+				FC31676529429BAB000A9443 /* DiscoveryListView.swift */,
+				FC31676729429BBD000A9443 /* DisappearanceListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC31675D294297B2000A9443 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FC31675E294297BB000A9443 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC31675129429426000A9443 /* ContentView.swift in Sources */,
+				FC31676629429BAB000A9443 /* DiscoveryListView.swift in Sources */,
+				FC31676229429B7E000A9443 /* DiscoveryAlertView.swift in Sources */,
+				FC31676029429800000A9443 /* HomeView.swift in Sources */,
+				FC31676429429B96000A9443 /* DisappearanceAlertView.swift in Sources */,
 				FC31674F29429426000A9443 /* Lost_Pet_Alert_AppApp.swift in Sources */,
+				FC31676829429BBD000A9443 /* DisappearanceListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct Lost_Pet_Alert_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
