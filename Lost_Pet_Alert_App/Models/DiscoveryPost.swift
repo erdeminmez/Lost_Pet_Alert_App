@@ -14,7 +14,9 @@ struct DiscoveryPost : Identifiable {
     var petColor : String
     var description : String
     var isCollected : Bool
-    var location : [Double]
+    var streetName: String
+    var cityName: String
+    var countryName: String
     var contactName : String
     var contactNumber : String
 }
