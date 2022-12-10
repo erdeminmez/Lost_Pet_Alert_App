@@ -11,11 +11,10 @@
 		FC31675329429428000A9443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC31675229429428000A9443 /* Assets.xcassets */; };
 		FC31675629429428000A9443 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC31675529429428000A9443 /* Preview Assets.xcassets */; };
 		FC31676029429800000A9443 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31675F29429800000A9443 /* HomeView.swift */; };
-		FC31676229429B7E000A9443 /* DiscoveryAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676129429B7E000A9443 /* DiscoveryAlertView.swift */; };
 		FC31676429429B96000A9443 /* DisappearanceAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676329429B96000A9443 /* DisappearanceAlertView.swift */; };
-		FC31676629429BAB000A9443 /* DiscoveryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676529429BAB000A9443 /* DiscoveryListView.swift */; };
 		FC31676829429BBD000A9443 /* DisappearanceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676729429BBD000A9443 /* DisappearanceListView.swift */; };
-		FC31676C2942A4FF000A9443 /* DiscoveryPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31676B2942A4FF000A9443 /* DiscoveryPost.swift */; };
+		FCE1E68C2943EB2D00B7EAED /* DisappearanceAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1E68B2943EB2D00B7EAED /* DisappearanceAlert.swift */; };
+		FCE1E68E2943F28D00B7EAED /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1E68D2943F28D00B7EAED /* AlertRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +23,10 @@
 		FC31675229429428000A9443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC31675529429428000A9443 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC31675F29429800000A9443 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		FC31676129429B7E000A9443 /* DiscoveryAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryAlertView.swift; sourceTree = "<group>"; };
 		FC31676329429B96000A9443 /* DisappearanceAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearanceAlertView.swift; sourceTree = "<group>"; };
-		FC31676529429BAB000A9443 /* DiscoveryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryListView.swift; sourceTree = "<group>"; };
 		FC31676729429BBD000A9443 /* DisappearanceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearanceListView.swift; sourceTree = "<group>"; };
-		FC31676B2942A4FF000A9443 /* DiscoveryPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryPost.swift; sourceTree = "<group>"; };
+		FCE1E68B2943EB2D00B7EAED /* DisappearanceAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearanceAlert.swift; sourceTree = "<group>"; };
+		FCE1E68D2943F28D00B7EAED /* AlertRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				FC31675F29429800000A9443 /* HomeView.swift */,
-				FC31676129429B7E000A9443 /* DiscoveryAlertView.swift */,
 				FC31676329429B96000A9443 /* DisappearanceAlertView.swift */,
-				FC31676529429BAB000A9443 /* DiscoveryListView.swift */,
 				FC31676729429BBD000A9443 /* DisappearanceListView.swift */,
 			);
 			path = Views;
@@ -101,7 +97,8 @@
 		FC31675E294297BB000A9443 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FC31676B2942A4FF000A9443 /* DiscoveryPost.swift */,
+				FCE1E68B2943EB2D00B7EAED /* DisappearanceAlert.swift */,
+				FCE1E68D2943F28D00B7EAED /* AlertRepository.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,12 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC31676629429BAB000A9443 /* DiscoveryListView.swift in Sources */,
-				FC31676229429B7E000A9443 /* DiscoveryAlertView.swift in Sources */,
 				FC31676029429800000A9443 /* HomeView.swift in Sources */,
-				FC31676C2942A4FF000A9443 /* DiscoveryPost.swift in Sources */,
+				FCE1E68C2943EB2D00B7EAED /* DisappearanceAlert.swift in Sources */,
 				FC31676429429B96000A9443 /* DisappearanceAlertView.swift in Sources */,
 				FC31674F29429426000A9443 /* Lost_Pet_Alert_AppApp.swift in Sources */,
+				FCE1E68E2943F28D00B7EAED /* AlertRepository.swift in Sources */,
 				FC31676829429BBD000A9443 /* DisappearanceListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,11 +310,14 @@
 				DEVELOPMENT_TEAM = ADQD396KCN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Lost Pet Alert needs to access location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Lost Pet Alert needs to access location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,11 +342,14 @@
 				DEVELOPMENT_TEAM = ADQD396KCN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Lost Pet Alert needs to access location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Lost Pet Alert needs to access location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

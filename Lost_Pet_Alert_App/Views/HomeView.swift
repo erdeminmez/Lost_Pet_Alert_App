@@ -9,76 +9,52 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @EnvironmentObject var alertRepository : AlertRepository
+    
+    
     @State private var selection : Int? = nil
     
     var body: some View {
         NavigationView {
-            ZStack {
+            VStack(alignment: .center, spacing: 0) {
                 
-                NavigationLink(destination: DiscoveryAlertView(), tag : 1, selection: self.$selection ){}
+                NavigationLink(destination: DisappearanceAlertView(), tag: 1, selection: self.$selection){}
                 
-                NavigationLink(destination: DisappearanceAlertView(), tag : 2, selection: self.$selection ){}
+                NavigationLink(destination: DisappearanceListView(), tag: 2, selection: self.$selection){}
                 
-                NavigationLink(destination: DiscoveryListView(), tag : 3, selection: self.$selection ){}
-                
-                NavigationLink(destination: DisappearanceListView(), tag : 4, selection: self.$selection ){}
-                
-                VStack {
-                    
-                    Button(action: {
-                        self.alertDiscovery()
-                    }){
-                        Text("Discovery Alert")
-                    }
+                Button("Disappearance Alert", action: alertDisappearance)
+                    .font(.headline.bold())
+                    .foregroundColor(.white)
+                    .frame(height: 50)
+                    .frame(width: 200)
+                    .background(Color.green)
+                    .cornerRadius(10)
                     .padding()
+                Button("Show Disappearances", action: showDisappearanceList)
+                    .font(.headline.bold())
+                    .foregroundColor(.white)
+                    .frame(height: 50)
+                    .frame(width: 200)
+                    .background(Color.green)
+                    .cornerRadius(10)
                     
-                    Button(action: {
-                        self.alertDisappearance()
-                    }){
-                        Text("Disappearance Alert")
-                    }
-                    .padding()
-                    
-                    Button(action: {
-                        self.showDiscoveryList()
-                    }){
-                        Text("Show Discoveries")
-                    }
-                    .padding()
-                    
-                    Button(action: {
-                        self.showDisappearanceList()
-                    }){
-                        Text("Show Disappearances")
-                    }
-                    .padding()
-                    
-                }//VStack ends
-                .padding()
-                .buttonStyle(.bordered)
-                
-            }//ZStack ends
+            }//VStack ends
+            .padding()
+            .navigationTitle("Lost Pet App")
+            .navigationBarTitleDisplayMode(.automatic)
         }//NavigationView ends
+        //.navigationViewStyle(StackNavigationViewStyle())
     }//body ends
     
-    // Alert a discovery
-    private func alertDiscovery() {
-        self.selection = 1
-    }
     
     // Alert a disappearance
     private func alertDisappearance() {
-        self.selection = 2
-    }
-    
-    // Show the list of discoveries
-    private func showDiscoveryList() {
-        self.selection = 3
+        self.selection = 1
     }
     
     // Show the list of disappearances
     private func showDisappearanceList() {
-        self.selection = 4
+        self.selection = 2
     }
 }
 

@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Lost_Pet_Alert_AppApp: App {
+    
+    let alertRepository = AlertRepository()
+    
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(alertRepository)
         }
     }
 }
