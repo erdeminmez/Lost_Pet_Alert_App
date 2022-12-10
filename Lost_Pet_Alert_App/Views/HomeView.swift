@@ -20,7 +20,7 @@ struct HomeView: View {
                 
                 NavigationLink(destination: DisappearanceAlertView(), tag: 1, selection: self.$selection){}
                 
-                NavigationLink(destination: DisappearanceListView(), tag: 2, selection: self.$selection){}
+                NavigationLink(destination: SearchView(), tag: 2, selection: self.$selection){}
                 
                 Button("Disappearance Alert", action: alertDisappearance)
                     .font(.headline.bold())
@@ -41,7 +41,7 @@ struct HomeView: View {
             }//VStack ends
             .padding()
             .navigationTitle("Lost Pet App")
-            .navigationBarTitleDisplayMode(.automatic)
+            .navigationBarTitleDisplayMode(.inline)
         }//NavigationView ends
         //.navigationViewStyle(StackNavigationViewStyle())
     }//body ends
