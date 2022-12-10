@@ -21,6 +21,7 @@
 		FCE1E69729442CF300B7EAED /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FCE1E69629442CF300B7EAED /* FirebaseAnalytics */; };
 		FCE1E69929442CF300B7EAED /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FCE1E69829442CF300B7EAED /* FirebaseFirestore */; };
 		FCE1E69B29442CF300B7EAED /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCE1E69A29442CF300B7EAED /* FirebaseFirestoreSwift */; };
+		FCE1E69D2944311100B7EAED /* FireDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1E69C2944311100B7EAED /* FireDBHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FCE1E68D2943F28D00B7EAED /* AlertRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		FCE1E6912944192800B7EAED /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		FCE1E6932944279C00B7EAED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCE1E69C2944311100B7EAED /* FireDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDBHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		FC31675D294297B2000A9443 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FCE1E69C2944311100B7EAED /* FireDBHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC31676029429800000A9443 /* HomeView.swift in Sources */,
+				FCE1E69D2944311100B7EAED /* FireDBHelper.swift in Sources */,
 				FCE1E68C2943EB2D00B7EAED /* DisappearanceAlert.swift in Sources */,
 				FC31676429429B96000A9443 /* DisappearanceAlertView.swift in Sources */,
 				FCE1E6922944192800B7EAED /* SearchView.swift in Sources */,
