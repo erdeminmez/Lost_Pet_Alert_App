@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D83D35F1B1E515B075130A34 /* Pods_Lost_Pet_Alert_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA658626798691CC8C7E8B8 /* Pods_Lost_Pet_Alert_App.framework */; };
 		FC31674F29429426000A9443 /* Lost_Pet_Alert_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31674E29429426000A9443 /* Lost_Pet_Alert_AppApp.swift */; };
 		FC31675329429428000A9443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC31675229429428000A9443 /* Assets.xcassets */; };
 		FC31675629429428000A9443 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC31675529429428000A9443 /* Preview Assets.xcassets */; };
@@ -16,9 +17,16 @@
 		FCE1E68C2943EB2D00B7EAED /* DisappearanceAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1E68B2943EB2D00B7EAED /* DisappearanceAlert.swift */; };
 		FCE1E68E2943F28D00B7EAED /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1E68D2943F28D00B7EAED /* AlertRepository.swift */; };
 		FCE1E6922944192800B7EAED /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1E6912944192800B7EAED /* SearchView.swift */; };
+		FCE1E6942944279D00B7EAED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCE1E6932944279C00B7EAED /* GoogleService-Info.plist */; };
+		FCE1E69729442CF300B7EAED /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FCE1E69629442CF300B7EAED /* FirebaseAnalytics */; };
+		FCE1E69929442CF300B7EAED /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FCE1E69829442CF300B7EAED /* FirebaseFirestore */; };
+		FCE1E69B29442CF300B7EAED /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCE1E69A29442CF300B7EAED /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47677D1B2FA84A902643DB29 /* Pods-Lost_Pet_Alert_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost_Pet_Alert_App.release.xcconfig"; path = "Target Support Files/Pods-Lost_Pet_Alert_App/Pods-Lost_Pet_Alert_App.release.xcconfig"; sourceTree = "<group>"; };
+		9F140FEE94ADC5E85216198B /* Pods-Lost_Pet_Alert_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost_Pet_Alert_App.debug.xcconfig"; path = "Target Support Files/Pods-Lost_Pet_Alert_App/Pods-Lost_Pet_Alert_App.debug.xcconfig"; sourceTree = "<group>"; };
+		CBA658626798691CC8C7E8B8 /* Pods_Lost_Pet_Alert_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lost_Pet_Alert_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC31674B29429426000A9443 /* Lost_Pet_Alert_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lost_Pet_Alert_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC31674E29429426000A9443 /* Lost_Pet_Alert_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lost_Pet_Alert_AppApp.swift; sourceTree = "<group>"; };
 		FC31675229429428000A9443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,6 +37,7 @@
 		FCE1E68B2943EB2D00B7EAED /* DisappearanceAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearanceAlert.swift; sourceTree = "<group>"; };
 		FCE1E68D2943F28D00B7EAED /* AlertRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		FCE1E6912944192800B7EAED /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FCE1E6932944279C00B7EAED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +45,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE1E69729442CF300B7EAED /* FirebaseAnalytics in Frameworks */,
+				D83D35F1B1E515B075130A34 /* Pods_Lost_Pet_Alert_App.framework in Frameworks */,
+				FCE1E69929442CF300B7EAED /* FirebaseFirestore in Frameworks */,
+				FCE1E69B29442CF300B7EAED /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7305C8FCA05D50304A2826F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F140FEE94ADC5E85216198B /* Pods-Lost_Pet_Alert_App.debug.xcconfig */,
+				47677D1B2FA84A902643DB29 /* Pods-Lost_Pet_Alert_App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7E7C7E3BA8FFAEE7D3C0AE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBA658626798691CC8C7E8B8 /* Pods_Lost_Pet_Alert_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC31674229429426000A9443 = {
 			isa = PBXGroup;
 			children = (
 				FC31674D29429426000A9443 /* Lost_Pet_Alert_App */,
 				FC31674C29429426000A9443 /* Products */,
+				7305C8FCA05D50304A2826F0 /* Pods */,
+				A7E7C7E3BA8FFAEE7D3C0AE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +93,7 @@
 		FC31674D29429426000A9443 /* Lost_Pet_Alert_App */ = {
 			isa = PBXGroup;
 			children = (
+				FCE1E6932944279C00B7EAED /* GoogleService-Info.plist */,
 				FC31675E294297BB000A9443 /* Models */,
 				FC31675D294297B2000A9443 /* Helpers */,
 				FC31675C294297A9000A9443 /* Views */,
@@ -113,15 +146,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC31675929429428000A9443 /* Build configuration list for PBXNativeTarget "Lost_Pet_Alert_App" */;
 			buildPhases = (
+				F12A876FCAB654A24421043B /* [CP] Check Pods Manifest.lock */,
 				FC31674729429426000A9443 /* Sources */,
 				FC31674829429426000A9443 /* Frameworks */,
 				FC31674929429426000A9443 /* Resources */,
+				119FE2C4AC24B042805100E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Lost_Pet_Alert_App;
+			packageProductDependencies = (
+				FCE1E69629442CF300B7EAED /* FirebaseAnalytics */,
+				FCE1E69829442CF300B7EAED /* FirebaseFirestore */,
+				FCE1E69A29442CF300B7EAED /* FirebaseFirestoreSwift */,
+			);
 			productName = Lost_Pet_Alert_App;
 			productReference = FC31674B29429426000A9443 /* Lost_Pet_Alert_App.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +190,9 @@
 				Base,
 			);
 			mainGroup = FC31674229429426000A9443;
+			packageReferences = (
+				FCE1E69529442CF300B7EAED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FC31674C29429426000A9443 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -166,10 +209,53 @@
 			files = (
 				FC31675629429428000A9443 /* Preview Assets.xcassets in Resources */,
 				FC31675329429428000A9443 /* Assets.xcassets in Resources */,
+				FCE1E6942944279D00B7EAED /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		119FE2C4AC24B042805100E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lost_Pet_Alert_App/Pods-Lost_Pet_Alert_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lost_Pet_Alert_App/Pods-Lost_Pet_Alert_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lost_Pet_Alert_App/Pods-Lost_Pet_Alert_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F12A876FCAB654A24421043B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lost_Pet_Alert_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC31674729429426000A9443 /* Sources */ = {
@@ -305,6 +391,7 @@
 		};
 		FC31675A29429428000A9443 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F140FEE94ADC5E85216198B /* Pods-Lost_Pet_Alert_App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -337,6 +424,7 @@
 		};
 		FC31675B29429428000A9443 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47677D1B2FA84A902643DB29 /* Pods-Lost_Pet_Alert_App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -389,6 +477,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCE1E69529442CF300B7EAED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCE1E69629442CF300B7EAED /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE1E69529442CF300B7EAED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FCE1E69829442CF300B7EAED /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE1E69529442CF300B7EAED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FCE1E69A29442CF300B7EAED /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE1E69529442CF300B7EAED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC31674329429426000A9443 /* Project object */;
 }

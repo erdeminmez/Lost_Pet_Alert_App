@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import Foundation
+import FirebaseFirestoreSwift
 
-struct DisappearanceAlert: Identifiable {
-    var id = UUID()
+struct DisappearanceAlert: Codable, Hashable {
+    @DocumentID var id : String? = UUID().uuidString
     
     var petType : String
     var petKind : String
@@ -22,4 +24,70 @@ struct DisappearanceAlert: Identifiable {
     
     var contactName : String
     var contactNumber : String
+    
+    init(petType: String, petKind: String, petColor: String, petDescription: String, dspTime: Date, dspStreet: String, dspCity: String, dspCountry: String, contactName: String, contactNumber: String){
+        self.petType = petType
+        self.petKind = petKind
+        self.petColor = petColor
+        self.petDescription = petDescription
+        
+        self.dspTime = dspTime
+        self.dspStreet = dspStreet
+        self.dspCity = dspCity
+        self.dspCountry = dspCountry
+        
+        self.contactName = contactName
+        self.contactNumber = contactNumber
+    }
+    
+    init(){
+        
+    }
+    
+    //Failable initializer
+    init?(dictionary: [String: Any]){
+        
+        guard let petTypeD = dictionary["petType"] as? String else{
+            return nil
+        }
+        
+        guard let petKindD = dictionary["petKind"] as? String else{
+            return nil
+        }
+        
+        guard let petColorD = dictionary["petColor"] as? String else{
+            return nil
+        }
+        
+        guard let petDescriptionD = dictionary["petDescription"] as? String else{
+            return nil
+        }
+        
+        guard let dspTimeD = dictionary["dspTime"] as? Date else{
+            return nil
+        }
+        
+        guard let dspStreetD = dictionary["dspStreet"] as? String else{
+            return nil
+        }
+        
+        guard let dspCityD = dictionary["dspCity"] as? String else{
+            return nil
+        }
+        
+        guard let dspCountryD = dictionary["dspCountry"] as? String else{
+            return nil
+        }
+        
+        guard let contactNameD = dictionary["contactName"] as? String else{
+            return nil
+        }
+        
+        guard let contactNumberD = dictionary["contactNumber"] as? String else{
+            return nil
+        }
+        
+        self.init(petType: petTypeD, petKind: petKindD, petColor: petColorD, petDescription: petDescriptionD, dspTime: dspTimeD, dspStreet: dspStreetD, dspCity: dspCityD, dspCountry: dspCountryD, contactName: contactNameD, contactNumber: contactNumberD)
+        
+    }
 }
